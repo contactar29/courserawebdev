@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%; /* 16px */
+    margin: 15px;
+    color: black;
+}
+
+.row{ width: 100%; }
+.tcenter{ text-align: center;}
+
+.box { float: left; padding:0px 10px; margin: 10px 0px;}
+.box > div { border: 1px solid black; padding: 0 10px; background-color: rgb(74, 255, 195); position: relative;}
+.heading{ font-size: 1.75em;}
+.title{ font-size: 1.25em; padding: 0 15px; background-color: rgb(121, 243, 215); border: 1px solid black; border-top: 0px; border-right: 0px; position: absolute; right: 0px;}
+.box > div p{ margin: 1.75em 0px;}
+
+/*Large Device*/
+@media (min-width: 992px){
+    .box{ width: 33.33%; }    
+}
+
+/*Medium Device*/
+@media (min-width: 768px) and (max-width: 991px){
+    .box{ width: 50%;}
+    .box:last-child{ width: 100%;}
+}
+
+/*Mobile Device*/
+@media (max-width: 767px){
+    .box{ width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+
